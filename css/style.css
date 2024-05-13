@@ -1,0 +1,56 @@
+/* layout */
+.container{
+    background-color: white;
+}
+  
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  li{
+    margin: 8px 0 0 8px;
+  }
+  
+  .card img{
+  width: 636px;
+  height: 400px;
+  gap: 0px;
+  border-radius: 8px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  }
+  
+  .card h2{
+  font-family: Noto Sans;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: left;
+  }
+  
+  .card p{
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #919191;
+  }
+  
+  .card tag{
+  width: Hug (88px)px;
+  height: Hug (32px)px;
+  padding: 4px 12px 4px 12px;
+  gap: 20px;
+  border-radius: 16px;
+  opacity: 0px;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  color:#3B3B3B;
+  background: #F1F1F1;
+  
+  }
