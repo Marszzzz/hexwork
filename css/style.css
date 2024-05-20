@@ -1,90 +1,154 @@
 /* wrap */
-.wrap{
-  max-width: 1920px;
-  font-family: 'Noto Sans';
+.wrap {
+  width: 1920px;
+  font-family: "Noto Sans", sans-serif;
 }
 
-
 /* header */
-.header{
+.header {
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  position: relative;
+  padding: 32px 0;
 }
-.header ul{
+.header .logo {
+  position: absolute;
+  left: 312px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header ul {
   gap: 40px;
 }
-.nav a{
+.nav a {
   text-decoration: none;
-}
-
-/* banner */
-.banner{
-  background-color:#FAFAFA;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.banner .upper-banner{
-  text-align: center;
+  font-family: "Noto Sans";
   font-size: 24px;
   font-weight: 400;
   line-height: 28.8px;
+  text-align: center;
+}
+
+/* banner */
+.banner {
+  background-color: #fafafa;
+}
+
+.banner .upper-banner {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 670px;
+  height: 192px;
+  position: relative;
+  padding: 80px 625px 24px;
+}
+
+.banner p {
+  padding: 59px 71px;
+  font-family: "Noto Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: center;
+}
+
+.pic-left {
+  position: absolute;
+  left: 625px;
+  top: 80px;
+}
+
+.pic-right {
+  position: absolute;
+  right: 625px;
+  bottom: 24px;
+}
+
+.service {
+  width: 636px;
+  margin: 24px auto 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.service li{
+  width: 298px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
 
 }
 
-.banner .lower-banner{
-  display: flex;
-  gap: 40px;
+.lowerbanner-list h3 {
+  color: #5b5b5b;
+  background-image: url("https://scontent.frmq2-1.fna.fbcdn.net/v/t1.15752-9/440451120_744498907891526_1865591490066509289_n.png?stp=cp0_dst-png&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=SMgsaKX4rUkQ7kNvgF3XrOv&_nc_ht=scontent.frmq2-1.fna&oh=03_Q7cD1QGwD_eUqVlqfH7yq4d7YS8WXOHvnXncAN3660XPKsaWAg&oe=665E240B");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 8px;
   text-align: center;
+}
+
+.lowerbanner-list p {
+  color: #3b3b3b;
+}
+
+/* layout */
+.container {
+  background-color: white;
+}
+
+.navlist {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-
-/* layout */
-.container{
-    background-color: white;
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-  
-  ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  li{
-    margin: 8px 0 0 8px;
-  }
-  
-  .card img{
+
+li {
+  margin: 8px 0 0 8px;
+}
+
+.card img {
   width: 636px;
   height: 400px;
   gap: 0px;
   border-radius: 8px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
-  }
-  
-  .card h2{
+}
+
+.card h2 {
   font-family: "Noto Sans";
   font-size: 28px;
   font-weight: 700;
   line-height: 33.6px;
   text-align: left;
-  }
-  
-  .card p{
+}
+
+.card p {
   font-family: "Noto Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
   color: #919191;
-  }
-  
-  .card a{
+}
+
+.card a {
   width: 88px;
   height: 32px;
   padding: 4px 12px 4px 12px;
@@ -96,7 +160,7 @@
   font-weight: 400;
   line-height: 40px;
   text-align: left;
-  color:#3B3B3B;
-  background: #F1F1F1;
+  color: #3b3b3b;
+  background: #f1f1f1;
   text-decoration: none;
-  }
+}
