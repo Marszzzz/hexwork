@@ -25,12 +25,28 @@
 }
 .nav a {
   text-decoration: none;
-  font-family: "Noto Sans";
   font-size: 24px;
   font-weight: 400;
   line-height: 28.8px;
   text-align: center;
 }
+.navlist li {
+  position: relative;
+  overflow: hidden;
+}
+
+.navlist li::before,
+.navlist li::after,
+.navlist li a::before,
+.navlist li a::after {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    opacity: 0; /* 初始状态设置为不可见 */
+    content: "";
+    transition: opacity 0.5s;
+ }
+
 
 /* banner */
 .banner {
@@ -50,9 +66,10 @@
   padding: 80px 625px 24px;
 }
 
-.banner p {
+.banner .upper-banner .text{
   padding: 59px 71px;
-  font-family: "Noto Sans";
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28.8px;
@@ -73,10 +90,9 @@
 
 .service {
   width: 636px;
-  margin: 24px auto 0px;
   display: flex;
-  justify-content: space-between;
   gap: 40px;
+  margin: 0 auto;
 }
 
 .service li{
@@ -132,15 +148,16 @@ li {
 }
 
 .card h2 {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 33.6px;
   text-align: left;
+  padding: 16px 0 0 0;
 }
 
 .card p {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -155,7 +172,7 @@ li {
   gap: 20px;
   border-radius: 16px;
   opacity: 0px;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 40px;
@@ -163,4 +180,91 @@ li {
   color: #3b3b3b;
   background: #f1f1f1;
   text-decoration: none;
+}
+
+/* pages */
+.pages{
+  gap: 16px;
+  padding: 72px 884px 120px 884px;
+  width: 152px;
+}
+
+.pages ul{
+  display: flex;
+}
+
+.pages a{
+  display: block;
+  text-decoration: none;
+  font-family: "Noto Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  width: 40px;
+}
+
+.firstpage {
+  background: #000000;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+
+/* footer */
+
+.footer{
+  height: 424px;
+  display: flex;
+  padding: 80px 312px 80px 312px;
+  border: 1px 0px 0px 0px;
+  justify-content: space-between;
+  opacity: 0px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+  background-repeat: no-repeat;
+}
+
+.footer .contact{
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+
+}
+
+.footer .contact a{
+  text-decoration: none;
+  color: #919191;
+}
+
+.footer .follow ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer .follow li{
+  width: 306px;
+  color: #FFFFFF;
+  border: 1px solid #C1C1C1;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.footer .follow .sign{
+  background: #000000;
+}
+
+.footer .follow a{
+  text-decoration: none;
+  color: #3B3B3B;
+}
+
+.footer .follow .sign a{
+  color: #FFFFFF;
 }
